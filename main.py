@@ -17,7 +17,7 @@ class MyServer(BaseHTTPRequestHandler):
         self.send_header("Content-type", "text/html") # Отправка типа данных, который будет передаваться
         self.end_headers() # Завершение формирования заголовков ответа
         print(self.path)
-        with open("templates/home.html", encoding="utf-8") as file:
+        with open("bootstrap/main/templates/main/home.html", encoding="utf-8") as file:
             self.wfile.write(bytes(file.read(), "utf-8")) # Тело ответа
 
 if __name__ == "__main__":
