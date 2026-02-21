@@ -67,6 +67,8 @@ main {
 
 .features h1 {
     font-size: 60px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
     margin-bottom: 30px;
     margin-top: 150px;
 }
@@ -115,6 +117,7 @@ main {
 .product-body {
     padding: 20px;
     text-align: center;
+    font-family: 'Courier New', monospace;
 }
 
 .product-price {
@@ -252,4 +255,127 @@ main {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.catalog-container {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.catalog-card {
+    width: 470px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: white;
+}
+
+.catalog-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.catalog-header {
+    background-color: #6f42c1;
+    color: white;
+    padding: 80px;
+    text-align: center;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+.catalog-header:after {
+    content: "";
+    display: block;
+    height: 1px;
+    margin: 5px auto 0;
+}
+
+.catalog-body {
+    padding: 10px;
+    text-align: start;
+    font-family: 'Courier New', monospace;
+}
+
+.view {
+    border: 1px solid #6f42c1;
+    color: #6f42c1;
+    padding: 3px 15px;
+    transition: all 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    justify-content: start;
+}
+
+.view:hover {
+    background: #6f42c1;
+    color: #fff;
+}
+
+.catalog-body p:last-child {
+    text-align: right;
+    color: #888;
+    font-style: italic;
+}
+
+.contacts-container {
+    display: flex;
+    font-size: 22px;
+    margin-left: 10px;
+    justify-content: center;
+    gap: 150px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.contacts-card {
+    width: 530px;
+    font-size: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: white;
+}
+
+.contacts-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.contacts-body {
+    padding: 10px;
+    font-weight: bold;
+    text-align: start;
+    font-family: 'Courier New', monospace;
+
+}
+
+.right-content {
+    justify-content: center;
+    text-align: left;
+    max-width: 700px;
+    margin-left: 200px;
+}
+
+.right-content h2 {
+    font-size: 52px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Courier New', monospace;
+}
+
+.right-content p {
+    font-size: 20px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+    font-family: 'Courier New', monospace;
+}
+
+.contacts-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
